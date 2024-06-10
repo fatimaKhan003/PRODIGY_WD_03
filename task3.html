@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="home-screen">
+        <h1>Tic Tac Toe</h1>
+        
+        <img src="tictactoe.jpg" alt="Tic Tac Toe" width="200" id="home-image">
+        <div id="mode-selection">
+            <p>Choose your mode:</p>
+            <button id="play-with-friend" class="btn">Play with Friend</button>
+            <button id="play-online" class="btn">Play with Computer</button>
+        </div>
+    </div>
+
+    <div id="name-entry-screen" style="display: none;">
+        <h1 id="name-entry-title">Enter Player Names</h1>
+        <div id="friend-name-entry" style="display: none;">
+            <label for="player1-name">Player 1 Name:</label>
+            <input type="text" id="player1-name"><br>
+            <label for="player2-name">Player 2 Name:</label>
+            <input type="text" id="player2-name"><br>
+        </div>
+        <div id="online-name-entry" style="display: none;">
+            <label for="player-name">Player Name:</label>
+            <input type="text" id="player-name" placeholder="Enter Your Name"><br>
+        </div>
+        <button id="start-game" class="btn">Start Game</button>
+    </div>
+    <div id="game-screen" style="display: none;">
+        <h1>Tic Tac Toe</h1>
+        <div id="tic-tac-toe-board">
+            <div class="cell" id="cell-0"></div>
+            <div class="cell" id="cell-1"></div>
+            <div class="cell" id="cell-2"></div>
+            <div class="cell" id="cell-3"></div>
+            <div class="cell" id="cell-4"></div>
+            <div class="cell" id="cell-5"></div>
+            <div class="cell" id="cell-6"></div>
+            <div class="cell" id="cell-7"></div>
+            <div class="cell" id="cell-8"></div>
+        </div>
+        <div id="message"></div>
+        <button id="restart-button" class="btn">Restart</button>
+        <button id="home-button" class="btn">Home</button>
+        <button id="exit-button" class="btn">Exit</button>
+    </div>
+
+    <div id="winner-screen" style="display: none;">
+        <h1 id="winner-message"></h1>
+        <button id="restart-button-winner" class="btn">Restart</button>
+        <button id="home-button-winner" class="btn">Home</button>
+        <button id="exit-button-winner" class="btn">Exit</button>
+    </div>
+
+    <div id="scoreboard" style="display: none;">
+        <h2>Scoreboard</h2>
+        <div id="scoreboard-friends" style="display: none;">
+            <div><span id="player1-name-display"></span> Wins: <span id="player1-score">0</span></div>
+            <div><span id="player2-name-display"></span> Wins: <span id="player2-score">0</span></div>
+            <div>Draws: <span id="draw-score-friends">0</span></div>
+        </div>
+        <div id="scoreboard-online" style="display: none;">
+            <div><span id="online-player-name-display"></span> Wins: <span id="online-player-score">0</span></div>
+            <div>Computer Wins: <span id="computer-score">0</span></div>
+            <div>Draws: <span id="draw-score-online">0</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

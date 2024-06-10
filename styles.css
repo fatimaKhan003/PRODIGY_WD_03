@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+#home-screen, #game-screen, #winner-screen, #name-entry-screen {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#mode-selection {
+    margin-top: 20px;
+}
+
+#mode-selection button, .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#mode-selection button:hover, .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+#message {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#scoreboard {
+    margin-top: 50px;
+}
+
+#scoreboard h2 {
+    margin-bottom: 10px;
+}
+
+#scoreboard div {
+    margin-bottom: 5px;
+}
+
+#scoreboard span {
+    margin-right: 5px;
+}
